@@ -88,8 +88,8 @@ observer.observe(document.getElementById('services'));
       function showPosition(position) {
         document.getElementById("geoloc").innerHTML =
         'Cerca de :'+"<br>" +
-        "Latitude: " + position.coords.latitude + "<br>" +
-        "Longitude: " + position.coords.longitude;
+        "Latitud: " + position.coords.latitude + "<br>" +
+        "Longitud: " + position.coords.longitude;
       }
 
 
