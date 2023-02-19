@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>FtvSenderismo</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/estilos.css">
+</head>
+
+<body id="page-top">
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="#page-top"><img src="assets/img/logo.png" alt="..." /></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                Menu
+                <i class="fas fa-bars ms-1"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="#services">Rutas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#presentacion">Presentacion</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#team">Nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Masthead-->
+    <header class="masthead">
+        <div class="container">
+            <div class="masthead-subheading">Bienvenido a FtvSenderismo!</div>
+            <div class="masthead-heading text-uppercase">Tu lugar de aventuras</div>
+            <a class="btn btn-primary btn-xl text-uppercase" href="#services">Saber más</a>
+        </div>
+    </header>
+    <!-- Services-->
+    <section class="page-section" id="services">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-heading text-uppercase">Rutas</h2>
+                <p id="geoloc"></p>
+            </div>
+            <div class="row text-center">
+                <div class="col-md-4 container">
+                    <img src="https://static-maps.alltrails.com/production/at-map/100395370/v1-trail-england-hampshire-chawton-and-upper-farringdon-circular-at-map-100395370-1649932448-414w200h-en-US-i-2-style_3.png"
+                        class='img-fluid' alt="">
+                    <h4 class="my-3">CAMINO NUEVO</h4>
+                    <p class="text-muted">Longitud total: 4 km.</p>
+                    <p class="text-muted">Duración: 2 hora 30 minutos.</p>
+                    <p class="text-muted">Dificultad: media.</p>
+
+                </div>
+                <div class="col-md-4">
+                    <img src="https://cdn.pacer.cc/route/screenshot/dnjp_20200401_21.png" class="img-fluid" alt="">
+                    <h4 class="my-3">RUTA DE LA SAL</h4>
+                    <p class="text-muted">Longitud total: 6 km.</p>
+                    <p class="text-muted">Duración: 4 horas.</p>
+                    <p class="text-muted">Dificultad: alta.</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="https://static-maps.alltrails.com/production/at-map/145500529/v1-trail-mexico-guanajuato-palo-blanco-at-map-145500529-1667329886-414w200h-en-US-i-2-style_3.png"
+                        class="img-fluid" alt="">
+                    <h4 class="my-3">RUTA DE LOS MOLINOS</h4>
+                    <p class="text-muted">Longitud total: 3,5 km.</p>
+                    <p class="text-muted">Duración: 2 horas.</p>
+                    <p class="text-muted">Dificultad: baja.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Presentacion-->
+    <section class="page-section" id="presentacion">
+        <div class="container">
+          <iframe id="myvideo" width="560" height="315" src="https://www.youtube.com/embed/dMrW53ps7uU?controls=0" allowfullscreen></iframe>
+        </div>
+      </section>
+<br>
+    <!-- Portfolio Grid-->
+    <section class="page-section" id="portfolio">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-heading text-uppercase">Portfolio</h2>
+                <h3 class="section-subheading text-muted">Algunas de nuestras experiencias.</h3>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-sm-6 mb-4">
+                    <!-- Portfolio item 1-->
+                    <div class="portfolio-item">
+                        <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal1">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid"
+                                src="https://www.experiencefayetteville.com/images/joomlart/article/f7abac252ae5ed68121b92ba7a669d87.jpg"
+                                alt="..." />
+                        </a>
+                        <div class="portfolio-caption">
+                            <div class="portfolio-caption-heading">Explorando nuevos horizontes</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 mb-4">
+                    <!-- Portfolio item 2-->
+                    <div class="portfolio-item">
+                        <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal2">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid"
+                                src="https://www.nationalparks.fi/documents/10550/60112665/Oulanka_retkeilijat-kanjonilla_1050_HeikkiSulander.jpg/e47dc712-2e63-c458-78ea-40df39c1c453?t=1636620705771"
+                                alt="..." />
+                        </a>
+                        <div class="portfolio-caption">
+                            <div class="portfolio-caption-heading">Siguiendo el camino menos transitado</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 mb-4">
+                    <!-- Portfolio item 3-->
+                    <div class="portfolio-item">
+                        <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal3">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="https://www.barrabes.com/images/actualidad/large/21035.jpg"
+                                alt="..." />
+                        </a>
+                        <div class="portfolio-caption">
+                            <div class="portfolio-caption-heading">La naturaleza como refugio</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
+                    <!-- Portfolio item 4-->
+                    <div class="portfolio-item">
+                        <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal4">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid"
+                                src="https://www.nps.gov/glac/planyourvisit/images/hiking-with-ranger-2to1.jpg?maxwidth=1200&autorotate=false"
+                                alt="..." />
+                        </a>
+                        <div class="portfolio-caption">
+                            <div class="portfolio-caption-heading">En la cima del mundo</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
+                    <!-- Portfolio item 5-->
+                    <div class="portfolio-item">
+                        <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal5">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid"
+                                src="https://www.runtastic.com/blog/wp-content/uploads/2019/10/blog_thumbnail_offroad-running_1200x800-1024x683.jpg"
+                                alt="..." />
+                        </a>
+                        <div class="portfolio-caption">
+                            <div class="portfolio-caption-heading">La aventura está en el camino</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <!-- Portfolio item 6-->
+                    <div class="portfolio-item">
+                        <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal6">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid"
+                                src="https://cms.visitballarat.com.au/app/uploads/2023/01/63c4d849f7bbf08c17380910.jpeg"
+                                alt="..." />
+                        </a>
+                        <div class="portfolio-caption">
+                            <div class="portfolio-caption-heading">Descubriendo el lado salvaje</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Team-->
+    <section class="page-section" id="team">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-heading text-uppercase">Nuestro equipo</h2>
+            </div>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="team-member">
+                        <img class="mx-auto rounded-circle" src="assets/img/team/1.jpg" alt="..." />
+                        <h4>Alberto Chicote</h4>
+                        <p class="text-muted">Guía de senderismo</p>
+                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Parveen Anand Twitter Profile"><i
+                                class="fab fa-twitter"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Parveen Anand Facebook Profile"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Parveen Anand LinkedIn Profile"><i
+                                class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="team-member">
+                        <img class="mx-auto rounded-circle" src="assets/img/team/2.jpg" alt="..." />
+                        <h4>Nena Daconte</h4>
+                        <p class="text-muted">Coordinador de ventas y marketing</p>
+                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Diana Petersen Twitter Profile"><i
+                                class="fab fa-twitter"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="#!"
+                            aria-label="Diana Petersen Facebook Profile"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="#!"
+                            aria-label="Diana Petersen LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="team-member">
+                        <img class="mx-auto rounded-circle" src="assets/img/team/3.jpg" alt="..." />
+                        <h4>Matías Prats</h4>
+                        <p class="text-muted">Coordinador de equipo y recursos humanos</p>
+                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Larry Parker Twitter Profile"><i
+                                class="fab fa-twitter"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Larry Parker Facebook Profile"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Larry Parker LinkedIn Profile"><i
+                                class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <p class="large text-muted">Somos un equipo comprometido y apasionado por lo que hacemos. Nos
+                        enorgullece brindar a nuestros clientes una experiencia única y memorable en cada excursión de
+                        senderismo que ofrecemos. ¡Únete a nosotros en nuestra próxima aventura de senderismo y descubre
+                        por qué somos un gran equipo!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Clients-->
+    <div class="py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-3 col-sm-6 my-3">
+                    <a href="#!"><img class="img-fluid img-brand d-block mx-auto"
+                            src="https://www.ayuntamiento.es/sites/default/files/styles/shield_ayuntamiento_scale/public/images_old/ayuntamientos/1290/el-puerto-del-rosario.png"
+                            alt="..." aria-label="Microsoft Logo" /></a>
+                </div>
+                <div class="col-md-3 col-sm-6 my-3">
+                    <a href="#!"><img class="img-fluid img-brand d-block mx-auto"
+                            src="https://www.pngkey.com/png/full/128-1280410_logo-ayto-puerto-del-rosario-ayuntamiento-puerto-del.png"
+                            alt="..." aria-label="Google Logo" /></a>
+                </div>
+                <div class="col-md-3 col-sm-6 my-3">
+                    <a href="#!"><img class="img-fluid img-brand d-block mx-auto"
+                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Escudo_de_Santa_Cruz_de_Tenerife.svg/1200px-Escudo_de_Santa_Cruz_de_Tenerife.svg.png"
+                            alt="..." aria-label="Facebook Logo" /></a>
+                </div>
+                <div class="col-md-3 col-sm-6 my-3">
+                    <a href="#!"><img class="img-fluid img-brand d-block mx-auto"
+                            src="https://www.maspalomas.com/images/Ayuntamiento.png" alt="..."
+                            aria-label="IBM Logo" /></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Contact-->
+    <section class="page-section" id="contact">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-heading text-uppercase">Contáctanos</h2>
+                <h3 class="section-subheading text-muted">¡No te vayas con dudas!</h3>
+            </div>
+            <!-- * * * * * * * * * * * * * * *-->
+            <!-- * * SB Forms Contact Form * *-->
+            <!-- * * * * * * * * * * * * * * *-->
+            <!-- This form is pre-integrated with SB Forms.-->
+            <!-- To make this form functional, sign up at-->
+            <!-- https://startbootstrap.com/solution/contact-forms-->
+            <!-- to get an API token!-->
+            <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+                <div class="row align-items-stretch mb-5">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <!-- Name input-->
+                            <input class="form-control" id="name" type="text" placeholder="Tu nombre *"
+                                data-sb-validations="required" />
+                            <div class="invalid-feedback" data-sb-feedback="name:required">Nombre es necesario.</div>
+                        </div>
+                        <div class="form-group">
+                            <!-- Email address input-->
+                            <input class="form-control" id="email" type="email" placeholder="Tu Email *"
+                                data-sb-validations="required,email" />
+                            <div class="invalid-feedback" data-sb-feedback="email:required">Email necesario.</div>
+                            <div class="invalid-feedback" data-sb-feedback="email:email">Email no es válido.</div>
+                        </div>
+                        <div class="form-group mb-md-0">
+                            <!-- Phone number input-->
+                            <input class="form-control" id="phone" type="tel" placeholder="Tu Teléfono *"
+                                data-sb-validations="required" />
+                            <div class="invalid-feedback" data-sb-feedback="phone:required">Teléfono es necesario.</div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group form-group-textarea mb-md-0">
+                            <!-- Message input-->
+                            <textarea class="form-control" id="message" placeholder="Tu mensaje *"
+                                data-sb-validations="required"></textarea>
+                            <div class="invalid-feedback" data-sb-feedback="message:required">Mensaje es necesario.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Submit success message-->
+                <!---->
+                <!-- This is what your users will see when the form-->
+                <!-- has successfully submitted-->
+                <div class="d-none" id="submitSuccessMessage">
+                    <div class="text-center text-white mb-3">
+                        <div class="fw-bolder">Enviado!</div>
+                        <br />
+                        <a href="https://startbootstrap.com/solution/contact-forms">No está activado</a>
+                    </div>
+                </div>
+                <!-- Submit error message-->
+                <!---->
+                <!-- This is what your users will see when there is-->
+                <!-- an error submitting the form-->
+                <div class="d-none" id="submitErrorMessage">
+                    <div class="text-center text-danger mb-3">Error!</div>
+                </div>
+                <!-- Submit Button-->
+                <div class="text-center"><button class="btn btn-primary btn-xl text-uppercase disabled"
+                        id="submitButton" type="submit">Enviar</button></div>
+            </form>
+        </div>
+    </section>
+    <!-- Footer-->
+    <footer class="footer py-4">
+        <div class="container">
+            <div class="row align-items-center">
+                <div> <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img
+                            alt="Licencia de Creative Commons" style="border-width:0"
+                            src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" /></a><br /><span
+                        xmlns:dct="http://purl.org/dc/terms/" property="dct:title">FtvSenderismo</span> by <span
+                        xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName">Andros & Pascal</span>
+                    is licensed under a <a rel="license"
+                        href="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons
+                        Reconocimiento-NoComercial-SinObraDerivada 4.0 Internacional License.</a></div>
+                <div class="col-lg-4 my-3 my-lg-0">
+                    <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Twitter"><i
+                            class="fab fa-twitter"></i></a>
+                    <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Facebook"><i
+                            class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="LinkedIn"><i
+                            class="fab fa-linkedin-in"></i></a>
+                </div>
+
+                <div class="col-lg-4 text-lg-end">
+                    <a class="link-dark text-decoration-none me-3" href="#!">Políticas de privacidad</a>
+                    <a class="link-dark text-decoration-none" href="#!">Términos de uso</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Portfolio Modals-->
+    <!-- Portfolio item 1 modal popup-->
+    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg"
+                        alt="Close modal" /></div>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="modal-body">
+                                <!-- Project details-->
+                                <h2 class="text-uppercase">Explorando nuevos horizontes</h2>
+                                <img class="img-fluid d-block mx-auto"
+                                    src="https://www.experiencefayetteville.com/images/joomlart/article/f7abac252ae5ed68121b92ba7a669d87.jpg"
+                                    alt="..." />
+                                <p>Juan es un joven aventurero que ha decidido tomarse un tiempo libre para explorar la
+                                    naturaleza. Hoy ha decidido subir a lo alto de una colina, desde donde podrá
+                                    disfrutar de unas vistas espectaculares. Con su mochila a la espalda y su cámara en
+                                    mano, Juan comienza su ascenso, animado por la idea de descubrir nuevos horizontes.
+                                </p>
+                                <ul class="list-inline">
+                                    <li>
+                                        <strong>Client:</strong>
+                                        Threads
+                                    </li>
+                                    <li>
+                                        <strong>Category:</strong>
+                                        Illustration
+                                    </li>
+                                </ul>
+                                <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal"
+                                    type="button">
+                                    <i class="fas fa-xmark me-1"></i>
+                                    Close Project
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Portfolio item 2 modal popup-->
+    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg"
+                        alt="Close modal" /></div>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="modal-body">
+                                <!-- Project details-->
+                                <h2 class="text-uppercase">Siguiendo el camino menos transitado</h2>
+                                <img class="img-fluid d-block mx-auto"
+                                    src="https://www.nationalparks.fi/documents/10550/60112665/Oulanka_retkeilijat-kanjonilla_1050_HeikkiSulander.jpg/e47dc712-2e63-c458-78ea-40df39c1c453?t=1636620705771"
+                                    alt="..." />
+                                <p>Ana es una joven intrépida que siempre busca desafíos. Hoy ha decidido explorar un
+                                    sendero poco conocido que la llevará por un terreno agreste y hermoso. A pesar de
+                                    que no sabe exactamente lo que encontrará en su camino, Ana se siente emocionada por
+                                    la idea de seguir el camino menos transitado.</p>
+                                <ul class="list-inline">
+                                    <li>
+                                        <strong>Client:</strong>
+                                        Explore
+                                    </li>
+                                    <li>
+                                        <strong>Category:</strong>
+                                        Graphic Design
+                                    </li>
+                                </ul>
+                                <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal"
+                                    type="button">
+                                    <i class="fas fa-xmark me-1"></i>
+                                    Close Project
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Portfolio item 3 modal popup-->
+    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg"
+                        alt="Close modal" /></div>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="modal-body">
+                                <!-- Project details-->
+                                <h2 class="text-uppercase">La naturaleza como refugio</h2>
+                                <img class="img-fluid d-block mx-auto"
+                                    src="https://www.barrabes.com/images/actualidad/large/21035.jpg" alt="..." />
+                                <p>María es una mujer muy ocupada que siempre está en movimiento. Hoy ha decidido
+                                    tomarse un respiro y buscar un refugio en la naturaleza. Con su perro a su lado,
+                                    María camina por un sendero rodeada de árboles, respirando el aire fresco y
+                                    disfrutando del silencio. Para ella, la naturaleza es un refugio donde puede
+                                    encontrar la paz y la tranquilidad que necesita.</p>
+                                <ul class="list-inline">
+                                    <li>
+                                        <strong>Client:</strong>
+                                        Finish
+                                    </li>
+                                    <li>
+                                        <strong>Category:</strong>
+                                        Identity
+                                    </li>
+                                </ul>
+                                <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal"
+                                    type="button">
+                                    <i class="fas fa-xmark me-1"></i>
+                                    Close Project
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Portfolio item 4 modal popup-->
+    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg"
+                        alt="Close modal" /></div>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="modal-body">
+                                <!-- Project details-->
+                                <h2 class="text-uppercase">En la cima del mundo</h2>
+                                <img class="img-fluid d-block mx-auto"
+                                    src="https://www.nps.gov/glac/planyourvisit/images/hiking-with-ranger-2to1.jpg?maxwidth=1200&autorotate=false"
+                                    alt="..." />
+                                <p>Carlos es un montañista experimentado que ha subido a muchas cumbres en su vida. Hoy
+                                    ha decidido enfrentar un nuevo desafío: subir a la cima de una montaña que nunca
+                                    antes había escalado. A medida que se acerca a la cima, Carlos siente la emoción de
+                                    la aventura y la satisfacción del logro. Cuando llega a la cima, abre los brazos y
+                                    grita de alegría, sintiendo que está en la cima del mundo.</p>
+                                <ul class="list-inline">
+                                    <li>
+                                        <strong>Client:</strong>
+                                        Lines
+                                    </li>
+                                    <li>
+                                        <strong>Category:</strong>
+                                        Branding
+                                    </li>
+                                </ul>
+                                <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal"
+                                    type="button">
+                                    <i class="fas fa-xmark me-1"></i>
+                                    Close Project
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Portfolio item 5 modal popup-->
+    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg"
+                        alt="Close modal" /></div>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="modal-body">
+                                <!-- Project details-->
+                                <h2 class="text-uppercase">La aventura está en el camino</h2>
+                                <img class="img-fluid d-block mx-auto"
+                                    src="https://www.runtastic.com/blog/wp-content/uploads/2019/10/blog_thumbnail_offroad-running_1200x800-1024x683.jpg"
+                                    alt="..." />
+                                <p>Laura es una joven que ama la naturaleza y la compañía de sus amigos. Hoy ha decidido
+                                    hacer una caminata por un sendero en compañía de sus amigos más cercanos. Juntos,
+                                    caminan por un paisaje hermoso, riendo y disfrutando del momento. Para Laura, la
+                                    aventura no está en llegar a un destino específico, sino en el camino que recorre
+                                    junto a sus amigos.</p>
+                                <ul class="list-inline">
+                                    <li>
+                                        <strong>Client:</strong>
+                                        Southwest
+                                    </li>
+                                    <li>
+                                        <strong>Category:</strong>
+                                        Website Design
+                                    </li>
+                                </ul>
+                                <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal"
+                                    type="button">
+                                    <i class="fas fa-xmark me-1"></i>
+                                    Close Project
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Portfolio item 6 modal popup-->
+    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg"
+                        alt="Close modal" /></div>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="modal-body">
+                                <!-- Project details-->
+                                <h2 class="text-uppercase">Descubriendo el lado salvaje</h2>
+                                <img class="img-fluid d-block mx-auto"
+                                    src="https://cms.visitballarat.com.au/app/uploads/2023/01/63c4d849f7bbf08c17380910.jpeg"
+                                    alt="..." />
+                                <p>Roberto es un fotógrafo que siempre busca capturar imágenes espectaculares. Hoy ha
+                                    decidido explorar un terreno agreste y escarpado en busca de la fotografía perfecta.
+                                    Con su cámara en mano, Roberto camina por un terreno difícil y peligroso, rodeado de
+                                    una naturaleza salvaje y hermosa. Para él, el desafío está en descubrir el lado
+                                    salvaje de la naturaleza y capturarlo en una imagen.</p>
+                                <ul class="list-inline">
+                                    <li>
+                                        <strong>Client:</strong>
+                                        Window
+                                    </li>
+                                    <li>
+                                        <strong>Category:</strong>
+                                        Photography
+                                    </li>
+                                </ul>
+                                <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal"
+                                    type="button">
+                                    <i class="fas fa-xmark me-1"></i>
+                                    Close Project
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+    <!-- * *                               SB Forms JS                               * *-->
+    <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+    <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+</body>
+
+</html>
