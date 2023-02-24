@@ -1,7 +1,7 @@
 class Portfolio3 extends HTMLElement {
-    constructor() {
-      super();
-      this.innerHTML = `
+  constructor() {
+    super();
+    this.innerHTML = `
       <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
           <div class="modal-dialog">
               <div class="modal-content">
@@ -42,6 +42,6 @@ class Portfolio3 extends HTMLElement {
               </div>
           </div>
       </div>`;
-    }
   }
-  customElements.define('port-folio3', Portfolio3);
+}
+customElements.define("port-folio3", Portfolio3);

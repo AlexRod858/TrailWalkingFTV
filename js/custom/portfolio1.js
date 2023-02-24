@@ -1,7 +1,7 @@
 class Portfolio1 extends HTMLElement {
-    constructor() {
-      super();
-      this.innerHTML = `<div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+  constructor() {
+    super();
+    this.innerHTML = `<div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
       <div class="modal-dialog">
           <div class="modal-content">
               <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg"
@@ -42,7 +42,6 @@ class Portfolio1 extends HTMLElement {
           </div>
       </div>
   </div>`;
-    }
   }
-  customElements.define('port-folio1', Portfolio1);
-
+}
+customElements.define("port-folio1", Portfolio1);

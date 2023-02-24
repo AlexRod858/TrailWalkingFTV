@@ -1,7 +1,7 @@
 class Footer extends HTMLElement {
-    constructor() {
-      super();
-      this.innerHTML = `<footer class="footer py-4">
+  constructor() {
+    super();
+    this.innerHTML = `<footer class="footer py-4">
       <div class="container">
           <div class="row align-items-center">
               <div> <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img
@@ -28,6 +28,6 @@ class Footer extends HTMLElement {
           </div>
       </div>
   </footer>`;
-    }
   }
-  customElements.define('foo-ter', Footer);
+}
+customElements.define("foo-ter", Footer);

@@ -1,7 +1,7 @@
 class Portfolio extends HTMLElement {
-    constructor() {
-      super();
-      this.innerHTML = `<section class="page-section" id="portfolio">
+  constructor() {
+    super();
+    this.innerHTML = `<section class="page-section" id="portfolio">
       <div class="container">
           <div class="text-center">
               <h2 class="section-heading text-uppercase">Portfolio</h2>
@@ -106,6 +106,6 @@ class Portfolio extends HTMLElement {
           </div>
       </div>
   </section>`;
-    }
   }
-  customElements.define('port-folio', Portfolio);
+}
+customElements.define("port-folio", Portfolio);

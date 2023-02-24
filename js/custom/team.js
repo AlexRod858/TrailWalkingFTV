@@ -1,7 +1,7 @@
 class Team extends HTMLElement {
-    constructor() {
-      super();
-      this.innerHTML = `<section class="page-section" id="team">
+  constructor() {
+    super();
+    this.innerHTML = `<section class="page-section" id="team">
       <div class="container">
           <div class="text-center">
               <h2 class="section-heading text-uppercase">Nuestro equipo</h2>
@@ -57,6 +57,6 @@ class Team extends HTMLElement {
           </div>
       </div>
   </section>`;
-    }
   }
-  customElements.define('te-am', Team);
+}
+customElements.define("te-am", Team);

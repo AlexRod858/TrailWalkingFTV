@@ -1,7 +1,7 @@
 class Clients extends HTMLElement {
-    constructor() {
-      super();
-      this.innerHTML = `<div class="py-5">
+  constructor() {
+    super();
+    this.innerHTML = `<div class="py-5">
       <div class="container">
           <div class="row align-items-center">
               <div class="col-md-3 col-sm-6 my-3">
@@ -27,6 +27,6 @@ class Clients extends HTMLElement {
           </div>
       </div>
   </div>`;
-    }
   }
-  customElements.define('cli-ents', Clients);
+}
+customElements.define("cli-ents", Clients);

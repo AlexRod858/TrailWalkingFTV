@@ -1,7 +1,7 @@
 class Rutas extends HTMLElement {
-    constructor() {
-      super();
-      this.innerHTML = `<section class="page-section" id="services">
+  constructor() {
+    super();
+    this.innerHTML = `<section class="page-section" id="services">
       <div class="container">
           <div class="text-center">
               <h2 class="section-heading text-uppercase">Rutas</h2>
@@ -35,6 +35,6 @@ class Rutas extends HTMLElement {
           </div>
       </div>
   </section>`;
-    }
   }
-  customElements.define('rut-as', Rutas);
+}
+customElements.define("rut-as", Rutas);

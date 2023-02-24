@@ -1,7 +1,7 @@
 class NavbarCustomElement extends HTMLElement {
-    constructor() {
-      super();
-      this.innerHTML = `<nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+  constructor() {
+    super();
+    this.innerHTML = `<nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
         <div class="container">
             <a class="navbar-brand" href="#page-top"><img src="assets/img/logo.png" alt="..." /></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
@@ -20,6 +20,6 @@ class NavbarCustomElement extends HTMLElement {
             </div>
         </div>
       </nav>`;
-    }
   }
-  customElements.define('navbar-custom-element', NavbarCustomElement);
+}
+customElements.define("navbar-custom-element", NavbarCustomElement);

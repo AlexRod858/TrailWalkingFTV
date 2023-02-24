@@ -1,7 +1,7 @@
 class Contacts extends HTMLElement {
-    constructor() {
-      super();
-      this.innerHTML = `<section class="page-section" id="contact">
+  constructor() {
+    super();
+    this.innerHTML = `<section class="page-section" id="contact">
       <div class="container">
           <div class="text-center">
               <h2 class="section-heading text-uppercase">Contáctanos</h2>
@@ -71,6 +71,6 @@ class Contacts extends HTMLElement {
           </form>
       </div>
   </section>`;
-    }
   }
-  customElements.define('cont-acts', Contacts);
+}
+customElements.define("cont-acts", Contacts);
