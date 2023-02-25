@@ -13,7 +13,7 @@ class Portfolio4 extends HTMLElement {
                               <div class="modal-body">
                                   <!-- Project details-->
                                   <h2 class="text-uppercase">En la cima del mundo</h2>
-                                  <img class="img-fluid d-block mx-auto"
+                                  <img class="img-fluid rounded-3 d-block mx-auto"
                                       src="https://www.nps.gov/glac/planyourvisit/images/hiking-with-ranger-2to1.jpg?maxwidth=1200&autorotate=false"
                                       alt="..." />
                                   <p>Carlos es un montañista experimentado que ha subido a muchas cumbres en su vida. Hoy
