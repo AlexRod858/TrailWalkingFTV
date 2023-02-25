@@ -11721,6 +11721,9 @@ p {
   padding: 0;
   border-radius: 100%;
 }
+#map {
+  height: 85%;
+}
 
 #mainNav {
   padding-top: 1rem;
