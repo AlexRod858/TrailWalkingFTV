@@ -11725,8 +11725,13 @@ p {
   padding: 0;
   border-radius: 100%;
 }
+
+.divmap {
+  height: 320px;
+}
+
 #map {
-  height: 85%;
+  height: 80%;
 }
 
 #mainNav {
@@ -12208,4 +12213,14 @@ section#contact form#contactForm :-ms-input-placeholder {
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI",
     Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
     "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+@media only screen and (min-device-width: 90px) and (max-device-width: 990px) {
+  #map {
+    height: 220px;
+  }
+
+  .divmap {
+    height: 320px;
+  }
 }

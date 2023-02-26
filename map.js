@@ -5,6 +5,7 @@ let markerUser;
 let markers = [];
 let markerFinal;
 
+
 navigator.geolocation.getCurrentPosition(position);
 
 function position(position) {
@@ -37,6 +38,8 @@ function initMap() {
   // crea un marcador donde esta el usuario
   markerUser = new google.maps.Marker({
     animation: google.maps.Animation.DROP,
+    title:"User",
+    label: 'U',
     position: userPosition,
     map: map,
   });
@@ -51,6 +54,9 @@ function initMap() {
     // Add the marker at the clicked location
     markerFinal = new google.maps.Marker({
       position: location,
+      draggable: true,
+      title:"Final Point Route",
+      label: 'F.P',
       map: map,
     });
   }
