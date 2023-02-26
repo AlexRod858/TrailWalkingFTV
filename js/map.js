@@ -3,6 +3,7 @@ let buttonEnd = document.getElementById("endRoute");
 
 let map;
 let userPosition;
+let marker;
 let markerUser;
 let markersWaypoints = [];
 let markerFinal;
@@ -35,6 +36,7 @@ function initMap() {
   });
 
   directionsRenderer.setMap(map);
+  marker = new google.maps.Marker;
   buttonEnd.addEventListener("click", () => {
     calculateAndDisplayRoute(directionsService, directionsRenderer);
   });
@@ -68,13 +70,16 @@ function initMap() {
     console.log("Array Waypoints in addMarker", markersWaypoints);
   }
 }
+function clear() {
+  marker.setMap(null);
+}
 
 function calculateAndDisplayRoute(directionsService, directionsRenderer) {
   let end = markersWaypoints.length - 1;
   markerFinal = markersWaypoints[end];
   posEnd = { lat: markerFinal.position.lat(), lng: markerFinal.position.lng() };
   console.log("Final Marker and his position", markerFinal, posEnd);
-
+  //clear();
   directionsService
     .route({
       origin: userPosition,
