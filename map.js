@@ -1,10 +1,13 @@
 //variables
+let buttonEnd = document.getElementById("endRoute");
 let map;
 let userPosition;
+let geocoder;
 let markerUser;
-let markers = [];
+let marker;
+let markertemp;
+let markersWaypoints = [];
 let markerFinal;
-
 
 navigator.geolocation.getCurrentPosition(position);
 
@@ -14,8 +17,8 @@ function position(position) {
     lng: position.coords.longitude,
   };
 
-  // da tus cordenadas
-  console.log(userPositionLatitude, userPositionLongitude);
+  // printa tus cordenadas
+  console.log("user position", userPosition);
 }
 
 function initMap() {
@@ -33,35 +36,93 @@ function initMap() {
     },
   });
 
+  marker = new google.maps.Marker({ map });
+  geocoder = new google.maps.Geocoder();
+
   directionsRenderer.setMap(map);
+  buttonEnd.addEventListener("click", () => {
+    calculateAndDisplayRoute(directionsService, directionsRenderer);
+  });
 
   // crea un marcador donde esta el usuario
   markerUser = new google.maps.Marker({
     animation: google.maps.Animation.DROP,
-    title:"User",
-    label: 'U',
+    title: "User",
+    label: "U",
     position: userPosition,
     map: map,
   });
+  console.log("Marker User", markerUser);
 
   // This event listener calls addMarker() when the map is clicked.
   google.maps.event.addListener(map, "click", (event) => {
-    addMarker(event.latLng, map);
+    geocode({ location: event.latLng });
   });
+
+  function geocode(request) {
+    geocoder
+      .geocode(request)
+      .then((result) => {
+        const { results } = result;
+        map.setCenter(results[0].geometry.location);
+        //marker.setPosition(results[0].geometry.location);
+        marker.setMap(map);
+        locationMark = results[0].geometry.viewport;
+
+        loc = { lat: locationMark.Ua.hi, lng: locationMark.Ia.hi };
+        console.log(
+          "result in geocode of locationMark and loc",
+          locationMark,
+          loc
+        );
+        addMarker(loc, map);
+      })
+      .catch((e) => {
+        alert("Geocode was not successful for the following reason: " + e);
+      });
+  }
 
   // Adds a marker to the map.
   function addMarker(location, map) {
+    console.log("in addMarker location atribute", location);
     // Add the marker at the clicked location
-    markerFinal = new google.maps.Marker({
-      position: location,
+    markertemp = new google.maps.Marker({
       draggable: true,
-      title:"Final Point Route",
-      label: 'F.P',
+      stopover: true,
+      title: "Way Point Route",
+      label: "W.P",
+      position: location,
       map: map,
     });
+
+    console.log("Marker temp", markertemp);
+    markersWaypoints.push(markertemp);
+    console.log("array markersWaypoints", markersWaypoints);
   }
+}
 
+function calculateAndDisplayRoute(directionsService, directionsRenderer) {
+  let end = markersWaypoints.length;
 
+  markerFinal = {
+    lat: markersWaypoints[end - 1].position.lat(),
+    lng: markersWaypoints[end - 1].position.lng(),
+  };
+  console.log("markerfinal", markerFinal, end);
+
+  directionsService
+    .route({
+      origin: userPosition,
+      destination: markerFinal,
+      waypoints: markersWaypoints,
+      optimizeWaypoints: true,
+      travelMode: google.maps.TravelMode.WALKING,
+    })
+    .then((response) => {
+      directionsRenderer.setDirections(response);
+      //const route = response.routes[0];
+    })
+    .catch((e) => window.alert("Directions request failed due to " + status));
 }
 
 window.initMap = initMap;
